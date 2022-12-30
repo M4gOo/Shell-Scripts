@@ -1,0 +1,5 @@
+Name a shell script that make sense. Means that allow yourself and others know exactly what the script does.
+Ex.: create a file in linux and give adminn permission. The script name it will be something like create-file-with-admin-permission.sh
+
+.sh extension -> shell script
+
