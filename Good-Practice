@@ -3,3 +3,6 @@ Ex.: create a file in linux and give adminn permission. The script name it will 
 
 .sh extension -> shell script
 
+Run the script -> give permission (chmod +x <file.sh>) then ./file.sh   
+               -> bash file.sh
+               -> [Run as command] -> create a shell script (without the .sh extension
