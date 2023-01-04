@@ -1,14 +1,33 @@
 Shell Script -> automate daily tasks (Backups, patching, monitor, ...)
 
+Script should be re-usable
+       should not require to edit before running
+
+Use command line arguments to pass inputs
+
 ###########################################
 
 Name a shell script that make sense. Means that allow yourself and others know exactly what the script does.
 Ex.: create a file in linux and give adminn permission. The script name it will be something like create-file-with-admin-permission.sh
 
+#
 .sh extension -> shell script
 
+#
 variable name -> use lower-case and underscores
 
+#
+If you want to change the value of the variable, use Command Line Arguments, which is the built-in variable. 
+Ex.:
+my_script new_variable_value
+                                  -> my_script - $0
+                                  -> new_variable_value - $1
+                                  -> it will run the script (command) named my_script with different value of variable which is new_variable_value
+                                  -> to make this works, inside the my_script, the name of variable needs to be assign with $1 (variable = $1), then 
+                                  any value you put after the command script it will assign to $1.
+                                  -> it is good inside the script assign only the value of the variable, otherwise anyone will understand the script
+                                      
+#
 Run the script -> ALWAYS need to give the rights permissions (chmod +x <file.sh>) then ./file.sh   
                -> bash file.sh
                -> [Run as command] -> create a shell script (without the .sh extension). 
