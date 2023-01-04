@@ -1,8 +1,37 @@
+Shell Script -> automate daily tasks (Backups, patching, monitor, ...)
+
+###########################################
+
 Name a shell script that make sense. Means that allow yourself and others know exactly what the script does.
 Ex.: create a file in linux and give adminn permission. The script name it will be something like create-file-with-admin-permission.sh
 
 .sh extension -> shell script
 
-Run the script -> give permission (chmod +x <file.sh>) then ./file.sh   
+variable name -> use lower-case and underscores
+
+Run the script -> ALWAYS need to give the rights permissions (chmod +x <file.sh>) then ./file.sh   
                -> bash file.sh
-               -> [Run as command] -> create a shell script (without the .sh extension
+               -> [Run as command] -> create a shell script (without the .sh extension). 
+                                          -> This case we need configure in the PATH environment, otherwise it won't work.
+                                          -> export PATH=$PATH:/path-to-the-command
+                                          -> Then you can run script-as-a-command
+
+##############################################
+
+VARIABLES - they are case sensitive
+
+usually in the beginning of the script
+Ex.:
+name_of_valuable=test
+ls $name_of_valuable
+
+store the output in a variable within a string to show the value as part of the string
+V1=$(V1 $name_of_valuable)
+echo "String: $V1"
+
+command as variable -> use ()
+up_time=$(uptime)
+
+same variable for backup -> use {}
+cp $file ${file}_bkp
+
