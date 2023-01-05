@@ -1,0 +1,48 @@
+It will run this block if the criteria is match, otherwise the script will skip this block
+In case the first statment is not match it will run elif, if is not match it will run else.
+
+if [ $A = "test" ]
+then
+    debug $A
+elif [ $A != "test" ]
+then
+    echo "well done"
+else
+    echo "try again"
+fi
+
+
+
+####   while  ####
+
+while [ xxxx ]
+do
+  echo "aaaa"
+done
+
+
+while is used when we don't know how many times the block needs to be repeated.
+while will be executed as long as the condition is true/occurs
+while create infinite loops
+
+related with while/for loop
+to escape the block use -> break
+to go back to the beginning of the loop use -> continue
+
+
+
+#####  case   #####
+
+case <<value/variable>> in
+ 1) aaa 
+    ;;
+ 2) bbb 
+    ;;
+ 3) break 
+    ;;
+ *) continue 
+    ;;
+esac
+
+case statement needs specify the value or a variable that you want to check.
+makes the code more simpler and easy and readable than if block
