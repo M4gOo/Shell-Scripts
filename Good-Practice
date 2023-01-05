@@ -38,6 +38,28 @@ Run the script -> ALWAYS need to give the rights permissions (chmod +x <file.sh>
                                           -> export PATH=$PATH:/path-to-the-command
                                           -> Then you can run script-as-a-command
 
+
+                            ####    shebang  #####
+                            
+Some script can not run in different shells, for example a script made in bash it will have an issue in dash even if use bash command before the script.sh,
+to specify which shell the script must run it is used the shebang at the top of shell script (#!/bin/bash). Using the shebang it is not necessary specify which 
+bash to run, the shebang instructs the shell to use a particular shell or interpreter for the script. Ex.: bash script.sh
+
+Adding the shebang line to the top of the script, it will use, for example the /bin/bash interpreter, even the script is run from other unsupported shells.
+
+
+                            ####    exit codes  #####
+                            
+ good practice to add the exit codes in your shell script. If not, when there is a error in your script (command) it will return 0 (you can check with echo $?)
+ which should be 1. Automatically if not specificy the exit code it will be 0. (Need to add exit 1 in the script when the script fails)
+ 
+ Always return appropriate exit codes in your script
+ 
+                          
+exit status = 0  - success
+exit status > 0  - failure
+
+echo $? - > can see the number 0 for success and 1 for failure after running a command.
 ##############################################
 
 VARIABLES - they are case sensitive
