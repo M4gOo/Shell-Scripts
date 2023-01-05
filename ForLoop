@@ -1,0 +1,20 @@
+If you have to run the same command multiple times for loop is the best choice 
+
+for item in <list of items>
+do
+  add-item-to-chart $item
+done  
+
+
+for item in $(cat list-of-items.txt)
+do
+  add-item-to-chart $item
+done  
+
+
+###   range  ###
+
+for item in {0..100}
+do
+  add-item-to-chart item-$item
+done  
