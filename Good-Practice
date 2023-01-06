@@ -62,6 +62,26 @@ exit status > 0  - failure
 echo $? - > can see the number 0 for success and 1 for failure after running a command.
 ##############################################
 
+Function - pieace/block of code that performs a function which can be reused in that script
+
+function name-of-function() {
+}
+
+inside the curly bracket are the function definition
+
+instead use exit statement, use return statement inside the function
+
+
+##################     ShellCheck   / IDE plugins for shellscripting   /  Google's Shell Scripting Style Guide      ############################
+
+install shellcheck that will go through the script and identify possible bugs and provide recommendation
+
+apt-get install shellcheck
+yum install shellcheck
+
+https://google.github.io/styleguide/shellguide.html   
+
+##############################################
 VARIABLES - they are case sensitive
 
 usually in the beginning of the script
