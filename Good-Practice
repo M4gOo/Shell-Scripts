@@ -81,6 +81,29 @@ yum install shellcheck
 
 https://google.github.io/styleguide/shellguide.html   
 
+################################################
+
+When you write the first script it wont be that god, maybe you have duplicates, add some fuctions and etc.
+
+Always check the command you are adding to the script doesn't need manually intervention
+
+Make sure you have all the steps in the right order, before create your script
+
+Test script in a VM - create a new VM or delete everything you installed and go step by step in the script.
+                    - create a snapshot and then restore the snapshot
+                    
+ After write the command into the script run in the VM and then test to see if everything is working and also check the script's output after running it. 
+ For example check any errors, not command found, etc.
+ 
+ It is good to write comments to improve readability
+ 
+ It is good to add checks in the script
+ 
+ Add some messages to show what the script is doing. It is important to add some colors to make easier to read and dont mix/lost in the outputs.
+ Ex.: echo -e "\033[0;32mChange-this\033[0m"
+ It is a good idea to make a variable/function, so in case you want change dont need to do manually in every echo in your script.
+ 
+
 ##############################################
 VARIABLES - they are case sensitive
 
