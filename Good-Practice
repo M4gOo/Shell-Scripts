@@ -81,6 +81,8 @@ yum install shellcheck
 
 https://google.github.io/styleguide/shellguide.html   
 
+https://misc.flogisoft.com/bash/tip_colors_and_formatting
+
 ################################################
 
 When you write the first script it wont be that god, maybe you have duplicates, add some fuctions and etc.
