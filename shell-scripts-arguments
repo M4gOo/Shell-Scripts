@@ -1,0 +1,19 @@
+-eq	Numeric Equality	 [ "A" -eq "A" ]
+-ne	Numeric Inquality	 
+-lt	Less Than	
+-le	Less Than or Equal	
+-gt	Greater Than	
+-ge	Greater Than or Equal	
+-d	Is a Directory	if [ -d /bin ]
+-f	Is a File	if [ -f /bin/ls ]
+-r	Is a readable file	if [ -r /bin/ls ]
+-w	Is a writable file	if [ -w /bin/ls ]
+-x	Is an executable file	if [ -x /bin/ls ]
+
+[[ ]]   - conditional operators that works only in bash
+
+[[ "1234" = *23* ]] if 1234 contains 23 (true)
+[[ "123" = 12[34] ]] if the 3rd character of 123 is 3 or 4 (true)
+[[ "125" = "12[34]" ]] if the 3rd character of 123 is 3 or 4 (false)
+[[ "123" > "234" ]] if "123" comes after "234" when sorted in alphabetical order (false)
+[[ "123" < "234" ]] if "123" comes before "234" when sorted in alphabetical order (true)
