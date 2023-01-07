@@ -6,7 +6,9 @@ https://misc.flogisoft.com/bash/tip_colors_and_formatting
 -le	Less Than or Equal	
 -gt	Greater Than	
 -ge	Greater Than or Equal	
--d	Is a Directory	if [ -d /bin ]
+-e  Is the file exists [ -e File ]
+-d	Is a Directory and exists	if [ -d /bin ]
+-e  Is the file exists and has size greater than 0 [ -s File ]
 -f	Is a File	if [ -f /bin/ls ]
 -r	Is a readable file	if [ -r /bin/ls ]
 -w	Is a writable file	if [ -w /bin/ls ]
