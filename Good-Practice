@@ -17,6 +17,9 @@ Ex.: create a file in linux and give adminn permission. The script name it will 
 variable name -> use lower-case and underscores
 
 #
+heredoc syntax - allows us to pass in multiple lines into a command ( <<EOF   EOF) EOF - end of file
+
+#
 If you want to change the value of the variable, use Command Line Arguments, which is the built-in variable. Then you don't need everytime open 
 the script and change manually.
 Ex.:
